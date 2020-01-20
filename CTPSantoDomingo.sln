@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{7EB7C7D3-C21D-4F9F-B737-324E23D768E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{725EA054-BD21-49FB-929C-922002E2A551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{7ABD77A9-7FBF-414F-B0DE-A1120F9785DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{51807DEB-E83C-4233-9120-80BC79E633C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pruebas", "Pruebas\Pruebas.csproj", "{5D65612E-69BB-4447-A1FA-5BFFFA5FE7BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EB7C7D3-C21D-4F9F-B737-324E23D768E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB7C7D3-C21D-4F9F-B737-324E23D768E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB7C7D3-C21D-4F9F-B737-324E23D768E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB7C7D3-C21D-4F9F-B737-324E23D768E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725EA054-BD21-49FB-929C-922002E2A551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725EA054-BD21-49FB-929C-922002E2A551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725EA054-BD21-49FB-929C-922002E2A551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725EA054-BD21-49FB-929C-922002E2A551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABD77A9-7FBF-414F-B0DE-A1120F9785DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABD77A9-7FBF-414F-B0DE-A1120F9785DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABD77A9-7FBF-414F-B0DE-A1120F9785DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABD77A9-7FBF-414F-B0DE-A1120F9785DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51807DEB-E83C-4233-9120-80BC79E633C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51807DEB-E83C-4233-9120-80BC79E633C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51807DEB-E83C-4233-9120-80BC79E633C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51807DEB-E83C-4233-9120-80BC79E633C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D65612E-69BB-4447-A1FA-5BFFFA5FE7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D65612E-69BB-4447-A1FA-5BFFFA5FE7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D65612E-69BB-4447-A1FA-5BFFFA5FE7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D65612E-69BB-4447-A1FA-5BFFFA5FE7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC42566B-9963-4051-BA0B-B2F93945BC27}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ajcg1995.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BLL\\BLL.csproj
+		SccProjectName1 = BLL
+		SccLocalPath1 = BLL
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = UI\\UI.csproj
+		SccProjectName3 = UI
+		SccLocalPath3 = UI
+		SccProjectUniqueName4 = Entidades\\Entidades.csproj
+		SccProjectName4 = Entidades
+		SccLocalPath4 = Entidades
+		SccProjectUniqueName5 = Pruebas\\Pruebas.csproj
+		SccProjectName5 = Pruebas
+		SccLocalPath5 = Pruebas
+	EndGlobalSection
+EndGlobal

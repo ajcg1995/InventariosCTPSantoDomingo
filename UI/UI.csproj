@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7ABD77A9-7FBF-414F-B0DE-A1120F9785DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.7.0.7, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.7.0.7\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivosPorAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivosPorAulas.Designer.cs">
+      <DependentUpon>ActivosPorAulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion.Designer.cs">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarActivos.Designer.cs">
+      <DependentUpon>AgregarActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarAula.Designer.cs">
+      <DependentUpon>AgregarAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDetalleReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarDetalleReporte.Designer.cs">
+      <DependentUpon>AgregarDetalleReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarFacturaActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarFacturaActivo.Designer.cs">
+      <DependentUpon>AgregarFacturaActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPrestadorServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPrestadorServicio.Designer.cs">
+      <DependentUpon>AgregarPrestadorServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarReparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarReparaciones.Designer.cs">
+      <DependentUpon>AgregarReparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aulas.Designer.cs">
+      <DependentUpon>Aulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control.cs" />
+    <Compile Include="AgregarCaracteristica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCaracteristica.Designer.cs">
+      <DependentUpon>AgregarCaracteristica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipoTecnologico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipoTecnologico.Designer.cs">
+      <DependentUpon>EquipoTecnologico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exportar.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AgregarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuarios.Designer.cs">
+      <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reparaciones.Designer.cs">
+      <DependentUpon>Reparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\DataSetPrincipal.cs">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\DataSetPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ReporteActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\ReporteActivos.Designer.cs">
+      <DependentUpon>ReporteActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ReporteEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\ReporteEstado.Designer.cs">
+      <DependentUpon>ReporteEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ReporteReparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\ReporteReparaciones.Designer.cs">
+      <DependentUpon>ReporteReparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ReporteReparacionesporActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\ReporteReparacionesporActivo.Designer.cs">
+      <DependentUpon>ReporteReparacionesporActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActivosPorAulas.resx">
+      <DependentUpon>ActivosPorAulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion.resx">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarActivos.resx">
+      <DependentUpon>AgregarActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarAula.resx">
+      <DependentUpon>AgregarAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarDetalleReporte.resx">
+      <DependentUpon>AgregarDetalleReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarFacturaActivo.resx">
+      <DependentUpon>AgregarFacturaActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPrestadorServicio.resx">
+      <DependentUpon>AgregarPrestadorServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarReparaciones.resx">
+      <DependentUpon>AgregarReparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aulas.resx">
+      <DependentUpon>Aulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCaracteristica.resx">
+      <DependentUpon>AgregarCaracteristica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipoTecnologico.resx">
+      <DependentUpon>EquipoTecnologico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarUsuarios.resx">
+      <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reparaciones.resx">
+      <DependentUpon>Reparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\ReporteActivos.resx">
+      <DependentUpon>ReporteActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\ReportedeActivos.rdlc" />
+    <EmbeddedResource Include="Reporte\ReportedeEstado.rdlc" />
+    <EmbeddedResource Include="Reporte\ReportedeReparaciones.rdlc" />
+    <EmbeddedResource Include="Reporte\ReporteEstado.resx">
+      <DependentUpon>ReporteEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\ReporteReparaciones.resx">
+      <DependentUpon>ReporteReparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\ReporteReparacionesporActivo.rdlc" />
+    <EmbeddedResource Include="Reporte\ReporteReparacionesporActivo.resx">
+      <DependentUpon>ReporteReparacionesporActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reporte\DataSetPrincipal.xsc">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\DataSetPrincipal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPrincipal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporte\DataSetPrincipal.xss">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\Max.png" />
+    <Content Include="Recursos\rezise.png" />
+    <Content Include="Recursos\Cerrar.png" />
+    <Content Include="Recursos\Class.png" />
+    <Content Include="Recursos\CTPLogo.jpg" />
+    <Content Include="Recursos\Menu.png" />
+    <Content Include="Recursos\MenuIcono.png" />
+    <Content Include="Recursos\minimizar.png" />
+    <Content Include="Recursos\Report.png" />
+    <Content Include="Recursos\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{7EB7C7D3-C21D-4F9F-B737-324E23D768E5}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{51807DEB-E83C-4233-9120-80BC79E633C6}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
